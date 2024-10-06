@@ -5,31 +5,19 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="" />
+    <title>Florist</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- CSS
-	============================================ -->
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
-    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="assets/css/vendor/font.awesome.min.css" />
-    <!-- Linear Icons CSS -->
     <link rel="stylesheet" href="assets/css/vendor/linearicons.min.css" />
-    <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css" />
-    <!-- Animation CSS -->
     <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
-    <!-- Jquery ui CSS -->
     <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css" />
-    <!-- Nice Select CSS -->
     <link rel="stylesheet" href="assets/css/plugins/nice-select.min.css" />
-    <!-- Magnific Popup -->
     <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
-
-    <!-- Main Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
@@ -69,6 +57,11 @@
                   <li>
                     <a href="blog-details-sidebar.html">
                       <span class="menu-text"> Blog</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="my-account.html">
+                      <span class="menu-text"> My Account</span>
                     </a>
                   </li>
                   <li>
@@ -235,13 +228,20 @@
               <nav>
                 <ul class="mobile-menu">
                   <li class="menu-item-has-children">
-                    <a href="home">Home</a>
+                    <a href="index.html">Home</a>
                   </li>
                   <li class="menu-item-has-children">
-                    <a href="blog.html">Shop</a>
+                    <a href="shop.html">
+                      <span class="menu-text">Shop</span>
+                    </a>
                   </li>
                   <li class="menu-item-has-children">
-                    <a href="blog.html">Blog</a>
+                    <a href="blog.html">
+                      <span class="menu-text">Blog</span>
+                    </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="my-account.html">Profile</a>
                   </li>
                   <li><a href="about-us.html">About Us</a></li>
                   <li><a href="contact-us.html">Contact</a></li>
@@ -315,119 +315,126 @@
         </div>
         <div class="row">
           <div class="col-md-12 col-custom">
-            <form
-              method="post"
-              id="contact-form"
-              accept-charset="UTF-8"
-              class="contact-form"
-            >
-              <div class="comment-box mt-5">
-                <h5 class="text-uppercase">Get in Touch</h5>
-                <div class="row mt-3">
-                  <div class="col-md-6 col-custom">
-                    <div class="input-item mb-4">
+            <section id="contact">
+              <p class="section__text__p1">Get in Touch</p>
+              <h1 class="title">Contact Me</h1>
+              <div class="contact-info-upper-container">
+                <div class="contact-wrapper">
+                  <section class="contact-section">
+                    <form class="contact-form" id="contactForm">
                       <input
-                        class="border-0 rounded-0 w-100 input-area name gray-bg"
-                        type="text"
-                        name="con_name"
-                        id="con_name"
-                        placeholder="Name"
-                        required
+                        type="hidden"
+                        name="access_key"
+                        value="e512bf97-c004-4390-a916-5161675c5b4c"
                       />
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-custom">
-                    <div class="input-item mb-4">
                       <input
-                        class="border-0 rounded-0 w-100 input-area email gray-bg"
-                        type="email"
-                        name="con_email"
-                        id="con_email"
-                        placeholder="Email"
-                        required
+                        type="hidden"
+                        name="subject"
+                        value="New Contact Form Submission from Florist"
                       />
-                    </div>
-                  </div>
-                  <div class="col-12 col-custom">
-                    <div class="input-item mb-4">
                       <input
-                        class="border-0 rounded-0 w-100 input-area subject gray-bg"
-                        type="text"
-                        name="con_content"
-                        id="con_content"
-                        placeholder="Subject"
-                        required
+                        type="hidden"
+                        name="from_name"
+                        value="My Website"
                       />
-                    </div>
-                  </div>
-                  <div class="col-12 col-custom">
-                    <div class="input-item mb-4">
-                      <textarea
-                        cols="30"
-                        rows="5"
-                        class="border-0 rounded-0 w-100 custom-textarea input-area gray-bg"
-                        name="con_message"
-                        id="con_message"
-                        placeholder="Message"
-                        required
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="col-12 col-custom mt-40">
-                    <button
-                      type="button"
-                      id="submit"
-                      name="submit"
-                      class="btn flosun-button secondary-btn theme-color rounded-0"
-                      onclick="handleSubmit()"
-                    >
-                      Send A Message
-                    </button>
 
-                    <div
-                      id="thankYouMessage"
-                      style="
-                        display: none;
-                        margin-top: 10px;
-                        color: white;
-                        background-color: #008000bf;
-                        padding: 10px 20px;
-                        width: 50%;
-                      "
-                    >
-                      Thanks for contacting me!
-                    </div>
-                  </div>
-                  <script>
-                    function handleSubmit() {
-                      // Get the values of the input fields
-                      const name = document.getElementById("con_name").value;
-                      const email = document.getElementById("con_email").value;
-                      const subject =
-                        document.getElementById("con_content").value;
-                      const message =
-                        document.getElementById("con_message").value;
+                      <div class="form-group-container">
+                        <div class="form-group">
+                          <label for="name" class="form-label">Name</label>
+                          <input
+                            id="name"
+                            name="name"
+                            class="form-input"
+                            placeholder="Your name"
+                            type="text"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="email" class="form-label">Email</label>
+                          <input
+                            id="email"
+                            name="email"
+                            class="form-input"
+                            placeholder="Your email"
+                            type="email"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="phone" class="form-label">Phone</label>
+                          <input
+                            id="phone"
+                            name="phone"
+                            class="form-input"
+                            placeholder="+880 18330******"
+                            type="text"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="message" class="form-label"
+                            >Message</label
+                          >
+                          <textarea
+                            class="form-textarea"
+                            id="message"
+                            name="message"
+                            placeholder="Your message"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <button
+                        class="form-submit"
+                        type="submit"
+                        style="width: 30%"
+                      >
+                        Send Message
+                      </button>
+                    </form>
 
-                      // Check if all fields are filled
-                      if (name && email && subject && message) {
-                        // Show the thank you message
-                        document.getElementById(
-                          "thankYouMessage"
-                        ).style.display = "block";
+                    <script>
+                      document
+                        .getElementById("contactForm")
+                        .addEventListener("submit", function (event) {
+                          event.preventDefault(); // Prevent the default form submission
 
-                        // Here you can also add your form submission logic, e.g., AJAX or form.submit();
-                        // For demonstration, we'll reset the form fields after displaying the message
-                        document.getElementById("contact-form").reset();
-                      } else {
-                        alert(
-                          "Please fill in all fields before sending your message."
-                        ); // Alert if fields are missing
-                      }
-                    }
-                  </script>
+                          const formData = new FormData(this); // Create a FormData object from the form
+
+                          fetch("https://api.web3forms.com/submit", {
+                            method: "POST",
+                            body: formData,
+                          })
+                            .then((response) => {
+                              if (response.ok) {
+                                alert("Thanks for contacting us!");
+                                this.reset(); // Optionally reset the form fields
+                              } else {
+                                alert(
+                                  "There was a problem with your submission. Please try again."
+                                );
+                              }
+                            })
+                            .catch((error) => {
+                              alert("Error: " + error.message);
+                            });
+                        });
+                    </script>
+                  </section>
                 </div>
+                <img
+                  style="
+                    position: relative;
+                    float: right;
+                    right: -13rem;
+                    bottom: -18rem;
+                    height: 3rem;
+                    transform: rotate(180deg);
+                  "
+                  src="./assets/arrow.png"
+                  alt="arrow"
+                  class="arrowicon"
+                  onclick="location.href='#desktop-nav'"
+                />
               </div>
-            </form>
+            </section>
           </div>
         </div>
       </div>
@@ -549,27 +556,14 @@
 
     <!-- JS
 ============================================ -->
-
-    <!-- jQuery JS -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <!-- jQuery Migrate JS -->
+     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <!-- Modernizer JS -->
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-    <!-- Bootstrap JS -->
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-
-    <!-- Swiper Slider JS -->
     <script src="assets/js/plugins/swiper-bundle.min.js"></script>
-    <!-- nice select JS -->
     <script src="assets/js/plugins/nice-select.min.js"></script>
-    <!-- Ajaxchimpt js -->
     <script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script>
-    <!-- Jquery Ui js -->
     <script src="assets/js/plugins/jquery-ui.min.js"></script>
-    <!-- Jquery Countdown js -->
-    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
-    <!-- jquery magnific popup js -->
     <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
 
     <!-- Main JS -->

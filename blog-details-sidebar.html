@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="robots" content="noindex, follow" />
+    <title>Florist</title>
     <meta name="description" content="" />
     <meta
       name="viewport"
@@ -66,8 +67,13 @@
                     </a>
                   </li>
                   <li>
-                    <a href="blog.html" class="active" >
+                    <a href="blog.html" class="active">
                       <span class="menu-text"> Blog</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="my-account.html">
+                      <span class="menu-text"> My Account</span>
                     </a>
                   </li>
                   <li>
@@ -234,13 +240,20 @@
               <nav>
                 <ul class="mobile-menu">
                   <li class="menu-item-has-children">
-                    <a href="home">Home</a>
+                    <a href="index.html">Home</a>
                   </li>
                   <li class="menu-item-has-children">
-                    <a href="blog.html">Shop</a>
+                    <a href="shop.html">
+                      <span class="menu-text">Shop</span>
+                    </a>
                   </li>
                   <li class="menu-item-has-children">
-                    <a href="blog.html">Blog</a>
+                    <a href="blog.html">
+                      <span class="menu-text">Blog</span>
+                    </a>
+                  </li>
+                  <li class="menu-item-has-children">
+                    <a href="my-account.html">Profile</a>
                   </li>
                   <li><a href="about-us.html">About Us</a></li>
                   <li><a href="contact-us.html">Contact</a></li>
@@ -342,142 +355,111 @@
                       ><i class="fa fa-pinterest-square pinterest-color"></i
                     ></a>
                   </div>
+
                   <div class="comment-area-wrapper mt-5">
                     <div class="comments-view-area">
-                      <h3 class="mb-5">3 Comments</h3>
+                      <h3 class="mb-5">Comments</h3>
                       <div class="single-comment-wrap mb-4 d-flex">
-                        <figure class="author-thumb">
-                          <a href="#">
-                            <img
-                              src="assets/images/review/1.jpg"
-                              alt="Author"
-                            />
-                          </a>
-                        </figure>
-                        <div class="comments-info">
-                          <p class="mb-2">
-                            This book is a treatise on the theory of ethics,
-                            very popular during the Renaissance. The first line
-                            of Lorem Ipsum, "Lorem ipsum dolor sit amet
-                          </p>
-                          <div
-                            class="comment-footer d-flex justify-content-between"
-                          >
-                            <a href="#" class="author"
-                              ><strong>Duy</strong> - July 30, 2024</a
-                            >
-                            <a href="#" class="btn-reply"
-                              ><i class="fa fa-reply"></i> Reply</a
-                            >
+                        <div class="container mt-5">
+                          <div id="comments-section">
+                            <!-- Existing comments will be appended here -->
                           </div>
+
+                          <form id="comment-form" action="#">
+                            <div class="comment-box mt-4">
+                              <h3>Leave A Comment</h3>
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="input-item mt-4 mb-4">
+                                    <textarea
+                                      cols="30"
+                                      rows="5"
+                                      name="comment"
+                                      class="form-control"
+                                      placeholder="Message"
+                                      required
+                                    ></textarea>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-item mb-4">
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Name"
+                                      required
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="input-item mb-4">
+                                    <input
+                                      class="form-control"
+                                      type="email"
+                                      placeholder="Email"
+                                      required
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button
+                                    type="submit"
+                                    class="btn flosun-button secondary-btn theme-color rounded-0 mt-2"
+                                  >
+                                    Post Comment
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
                         </div>
-                      </div>
-                      <div
-                        class="single-comment-wrap mb-4 comment-reply d-flex"
-                      >
-                        <figure class="author-thumb">
-                          <a href="#">
-                            <img
-                              src="assets/images/review/1.jpg"
-                              alt="Author"
-                            />
-                          </a>
-                        </figure>
-                        <div class="comments-info">
-                          <p class="mb-2">
-                            Praesent bibendum risus pellentesque faucibus
-                            rhoncus. Etiam a mollis odio. Integer urna nisl,
-                            fermentum eu mollis et, gravida eu elit.
-                          </p>
-                          <div
-                            class="comment-footer d-flex justify-content-between"
-                          >
-                            <a href="#" class="author"
-                              ><strong>Jack</strong> - July 30, 2024</a
-                            >
-                            <a href="#" class="btn-reply"
-                              ><i class="fa fa-reply"></i> Reply</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                      <div class="single-comment-wrap mb-4 d-flex">
-                        <figure class="author-thumb">
-                          <a href="#">
-                            <img
-                              src="assets/images/review/1.jpg"
-                              alt="Author"
-                            />
-                          </a>
-                        </figure>
-                        <div class="comments-info">
-                          <p class="mb-2">
-                            Praesent bibendum risus pellentesque faucibus
-                            rhoncus. Etiam a mollis odio. Integer urna nisl,
-                            fermentum eu mollis et, gravida eu elit.
-                          </p>
-                          <div
-                            class="comment-footer d-flex justify-content-between"
-                          >
-                            <a href="#" class="author"
-                              ><strong>Duy</strong> - July 30, 2024</a
-                            >
-                            <a href="#" class="btn-reply"
-                              ><i class="fa fa-reply"></i> Reply</a
-                            >
-                          </div>
-                        </div>
+
+                        <script>
+                          document
+                            .getElementById("comment-form")
+                            .addEventListener("submit", function (event) {
+                              event.preventDefault(); // Prevent the default form submission
+
+                              // Get the values from the input fields
+                              const name =
+                                event.target.querySelector(
+                                  'input[type="text"]'
+                                ).value;
+                              const comment = event.target.querySelector(
+                                'textarea[name="comment"]'
+                              ).value;
+                              const submitButton = event.target.querySelector(
+                                'button[type="submit"]'
+                              );
+                              submitButton.innerHTML = "Posting...";
+                              submitButton.classList.add("btn-loading");
+
+                              setTimeout(() => {
+                                const newComment =
+                                  document.createElement("div");
+                                newComment.className = "single-comment-wrap";
+
+                                newComment.innerHTML = `
+                                      <div class="comment-content">
+                                          <h5 class="comment-author-name">Name: ${name}</h5>
+                                          <p class="comment-text">Comment: ${comment}</p>
+                                          <span class="comment-date">Date: ${new Date().toLocaleDateString()}</span>
+                                      </div>
+                                  `;
+                                document
+                                  .getElementById("comments-section")
+                                  .appendChild(newComment);
+                                event.target.reset();
+                                submitButton.innerHTML = "Post Comment";
+                                submitButton.classList.remove("btn-loading");
+                              }, 1000);
+                            });
+                        </script>
                       </div>
                     </div>
                   </div>
                 </section>
               </div>
-              <!-- Blog Details Wrapper Area End -->
-              <!-- Blog Comments Area Start Here -->
-              <form action="#">
-                <div class="comment-box">
-                  <h3>Leave A Comment</h3>
-                  <div class="row">
-                    <div class="col-12 col-custom">
-                      <div class="input-item mt-4 mb-4">
-                        <textarea
-                          cols="30"
-                          rows="5"
-                          name="comment"
-                          class="border rounded-0 w-100 custom-textarea input-area"
-                          placeholder="Message"
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-custom">
-                      <div class="input-item mb-4">
-                        <input
-                          class="border rounded-0 w-100 input-area name"
-                          type="text"
-                          placeholder="Name"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-custom">
-                      <div class="input-item mb-4">
-                        <input
-                          class="border rounded-0 w-100 input-area email"
-                          type="text"
-                          placeholder="Email"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-12 col-custom mt-599">
-                      <button
-                        type="submit"
-                        class="btn flosun-button primary-btn rounded-0 w-100"
-                      >
-                        Post comment
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </form>
               <!-- Blog Comments Area End Here -->
             </div>
             <div class="col-lg-3 col-12 col-custom">
@@ -540,14 +522,11 @@
                         <div class="product-content">
                           <div class="product-title">
                             <h4 class="title-2">
-                              <a href="shop.html"
-                                >Glory of the Snow</a
-                              >
+                              <a href="shop.html">Glory of the Snow</a>
                             </h4>
                           </div>
                           <div class="price-box">
                             <span class="regular-price">৳ 599.00</span>
-                             
                           </div>
                           <div class="product-rating">
                             <i class="fa fa-star"></i>
@@ -565,14 +544,11 @@
                         <div class="product-content">
                           <div class="product-title">
                             <h4 class="title-2">
-                              <a href="shop.html"
-                                >Pearly Everlasting</a
-                              >
+                              <a href="shop.html">Pearly Everlasting</a>
                             </h4>
                           </div>
                           <div class="price-box">
                             <span class="regular-price">৳ 599.00</span>
-                             
                           </div>
                           <div class="product-rating">
                             <i class="fa fa-star"></i>
@@ -590,14 +566,11 @@
                         <div class="product-content">
                           <div class="product-title">
                             <h4 class="title-2">
-                              <a href="shop.html"
-                                >Jack in the Pulpit</a
-                              >
+                              <a href="shop.html">Jack in the Pulpit</a>
                             </h4>
                           </div>
                           <div class="price-box">
                             <span class="regular-price">৳ 599.00</span>
-                             
                           </div>
                           <div class="product-rating">
                             <i class="fa fa-star"></i>
@@ -742,27 +715,14 @@
 
     <!-- JS
 ============================================ -->
-
-    <!-- jQuery JS -->
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <!-- jQuery Migrate JS -->
     <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
-    <!-- Modernizer JS -->
     <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
-    <!-- Bootstrap JS -->
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-
-    <!-- Swiper Slider JS -->
     <script src="assets/js/plugins/swiper-bundle.min.js"></script>
-    <!-- nice select JS -->
     <script src="assets/js/plugins/nice-select.min.js"></script>
-    <!-- Ajaxchimpt js -->
     <script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script>
-    <!-- Jquery Ui js -->
     <script src="assets/js/plugins/jquery-ui.min.js"></script>
-    <!-- Jquery Countdown js -->
-    <script src="assets/js/plugins/jquery.countdown.min.js"></script>
-    <!-- jquery magnific popup js -->
     <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
 
     <!-- Main JS -->
